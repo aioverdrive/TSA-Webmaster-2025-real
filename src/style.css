@@ -1,4 +1,33 @@
-
+/* These are css variables, we store a certain value and then use that variable name
+  across the css sheet so that if I wanted to change a certain color or weight I can 
+  just do it here on top instead of replacing it for every time I used it*/
+:root {
+  /* colors */
+  --clr-accent: #F2A71B;
+  --clr-bg: #EAF4D3;
+  --clr-primary: #81B622;
+  --clr-secondary: #4E944F;
+  --clr-neutral-typography: #040316;
+  /* font family */
+  --ff-primary: "Jost", sans-serif;
+  /* additional abstraction */
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+  /* font weights (light or bold) */
+  --fw-light: 200;
+  --fw-regular: 300;
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+  /* font sizes */
+  --fs-small: .875rem;
+  --fs-regular: 1rem;
+  --fs-cta: 1.5rem;
+  --fs-subtitles: 1.75rem;
+  --fs-titles: 3rem;
+}
+/* THIS IS ALL STUFF I DONT UNDERSTAND THAT WELL SO DW LOL
+  the purpose of these rules is to try to cancel out some dumb default css behavior so
+  yeah */
 /* Box sizing rules */
 *,
 *::before,
