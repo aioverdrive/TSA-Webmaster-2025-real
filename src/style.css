@@ -7,7 +7,8 @@
   --clr-bg: #EAF4D3;
   --clr-primary: #81B622;
   --clr-secondary: #4E944F;
-  --clr-neutral-typography: #040316;
+  --clr-neutral-900: #040316;
+  --clr-neutral-100: #F5F1E7;
   /* font family */
   --ff-primary: "Jost", sans-serif;
   /* additional abstraction */
@@ -88,4 +89,62 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+/* Utility Classes, classes that style only one aspect */
+/* colors */
+.text-primary {
+  color: var(--clr-primary);
+}
+.text-accent {
+  color: var(--clr-accent);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+/* background colors */
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+/* font weights */
+.fw-light {
+  font-weight: var(--fw-light)
+}
+.fw-regular {
+  font-weight: var(--fw-regular)
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold)
+}
+.fw-bold {
+  font-weight: var(--fw-bold)
+}
+/* font sizes */
+.fs-small {
+  font-size: var(--fs-small)
+}
+.fs-regular {
+  font-size: var(--fs-regular)
+}
+/* stands for call to action, meaning any text that prompts
+    the user to do something (i.e. click a button) */
+.fs-cta {
+  font-size: var(--fs-cta);
+}
+.fs-subtitles {
+  font-size: var(--fs-subtitles)
+}
+.fs-titles {
+  font-size: var(--fs-titles)
 }
