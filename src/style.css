@@ -106,6 +106,13 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-neutral-900);
+  text-align: center;
+}
+p:not([class]) {
+  max-width: 45ch;
+}
+.wide-paragraph {
+  max-width: 75%;
 }
 .container {
   --max-width: 69.375rem;
@@ -113,6 +120,22 @@ body {
   --horizontal-spacing: var(--size-400);
   width: min(var(--max-width), (100% - (var(--horizontal-spacing) * 2)));
   margin-inline: auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;  /* Stack h1 and p vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: center; /* Center vertically (if needed) */
+}
+/* this is also where i dont use css variables */
+.flow-section {
+  --flow-spacer: 1em;
+}
+.flow-hero {
+  --flow-spacer: 2em;
+}
+:where(.flow :not(:first-child)){
+  margin-top: var(--flow-spacer, 3em);
 }
 .padding-block-900 {
   padding-block: var(--size-900);
