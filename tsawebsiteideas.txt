@@ -1,0 +1,52 @@
+INFORMATION FOR FILLING OUT CONTENT:
+**Website Content Brief for Hummus Bowls and Wraps**  
+
+**Overview**  
+Hummus Bowls and Wraps is a **dine-in and carry-out** restaurant specializing in **vegetarian and vegan food**. For over a decade, the restaurant has been committed to **sustainability, fresh ingredients, and community impact**.  
+
+**Sustainability & Process**  
+Hummus Bowls and Wraps follows a **four-step process** to ensure high-quality, eco-friendly food:  
+1. **Sourcing Fresh Ingredients** – Partnering with **local farmers** to obtain seasonal, fresh, and organic produce.  
+2. **Daily Preparation** – Preparing all ingredients in-house before opening to maintain peak freshness.  
+3. **Serving with Care** – Providing customers with **customizable** bowls and wraps for a personalized dining experience.  
+4. **Giving Back** – Donating leftover ingredients and meals to **families in need**, reducing food waste and supporting the community.  
+
+ **Impact Metrics**  
+Hummus Bowls and Wraps is committed to **measurable sustainability** by tracking:  
+- **CO₂ Emissions Saved** – Compared to non-vegan restaurants.  
+- **Water Conservation** – Highlighting how plant-based meals use significantly less water.  
+- **Families Fed** – Demonstrating how surplus food donations make a difference.  
+
+**Menu Philosophy**  
+While their ingredients are often **seasonal**, Hummus Bowls and Wraps ensures every guest gets a **customizable experience**, allowing them to craft the perfect bowl or wrap to fit their preferences and dietary needs.  
+
+----
+
+
+website working sitemap:
+home ->
+menu - our story (kinda not sure about this one) - our methods - our impact - catering - contact
+WEBSITE north-stars
+values should be sustainmaxxing. perhaps a lot of rhetoric about the earth being our home.
+^this includes how we source our food with local ingredients and then give away our excess ingredients to local food banks.
+perhaps include an impact calculator, show how much co2 we've saved, water we've saved, and families we've helped for how long we've stayed. 
+^could copy my old code LOL.
+WEBSITE ideas:
+https://soulvegsouth.com
+everything is great but i love the about section especially
+i think we could straight up copy the contact session too
+regenerative food is lowkey fire as frick.
+https://theplotrestaurant.com/happening/whoweare
+i LOVE the idea of having a heartfelt letter about the personal origin story
+https://down2earthplantbased.com/
+I LOVEEEE how the header is different from the hero image but it still functions as a header since its fixed and yeah
+
+
+Website important footnotes:
+good idea to put in the menu section that due to our highly seasonal nature of our menu, its likely that not everything will be available.
+when including catering, be sure to add a 5 business day notice before all catering requests as we'll need to request more fresh produce from our local farmers 
+to meet your needs.
+when including impact, be sure to include fake clients we work with (i.e. feeding america, red cross, justone)
+i can slowly increase the numbers on the our impact page by mentioning our averagae amount of x we save/help per day in the description
+
+
