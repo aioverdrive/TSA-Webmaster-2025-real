@@ -11,25 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
   </head>
-  <body>
-    <header class="primary-header">
+  <body class="bg-unique-color">
+    <header class="primary-header | bg-primary">
       <div class="container">
-        <a href="#"><img src="#" alt="Hummus Bowls Logo"/></a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list" aria-label="Primary">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/pages/menu.html">Menu</a></li>
-            <li><a href="/pages/our-methods.html">Our Methods</a></li>
-            <li><a href="/pages/our-impact.html">Our Impact</a></li>
-            <li><a href="/pages/catering.html">Catering</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="nav-wrapper">
+          <a href="#"><img src="#" alt="Hummus Bowls Logo"/></a>
+          <!-- Mobile exclusive navigation -->
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="icons/icon-hamburger.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="icons/icon-close.svg" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list" aria-label="Primary">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="/pages/menu.html">Menu</a></li>
+              <li><a href="/pages/our-methods.html">Our Methods</a></li>
+              <li><a href="/pages/our-impact.html">Our Impact</a></li>
+              <li><a href="/pages/catering.html">Catering</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div> <!--/container-->
     </header>
 
     <main>
-      <section class="padding-block-900 bg-netural-100"> <!--hero-->
+      <section class="padding-block-900"> <!--hero-->
         <div class="container">
           <div class="even-columns">
             <div>
@@ -43,7 +51,7 @@
         </div>
       </section> <!--/hero-->
 
-      <section class="padding-block-900 bg-primary"> <!--about us-->
+      <section class="padding-block-900"> <!--about us-->
         <div class="container">
           <div class="one-column">
             <div>
@@ -55,14 +63,14 @@
           </div> <!--/one-column-->
       </section> <!--/about us-->
       
-      <section class="padding-block-900 bg-netural-100"> <!--our methods-->
+      <section class="padding-block-900"> <!--our methods-->
         <div class="container">
           <div class="even-columns">
             <div>
               <img src="#" alt="Something that illustrates our methods (placeholder)"/>
             </div>
             <div>
-              <h2 class="fw-semi-bold fs-subtitles text-primary">Our Methods</h2>
+              <h2 class="fw-semi-bold fs-subtitles">Our Methods</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus labore ducimus cupiditate ea, 
                 tempore voluptates commodi, sint nobis porro repellendus in numquam odio alias amet, a quisquam unde facilis!</p>
                 <button class="button">See More</button>
@@ -71,7 +79,7 @@
         </div>
       </section> <!--/our methods-->
 
-      <section class="padding-block-900 bg-primary"> <!--our impact-->
+      <section class="padding-block-900"> <!--our impact-->
         <div class="container">
           <div class="even-columns">
             <div>
@@ -87,7 +95,7 @@
         </div>
       </section> <!--/our impact-->
 
-      <section class="padding-block-900 bg-netural-100"> <!--menu-->
+      <section class="padding-block-900"> <!--menu-->
         <div class="container">
           <div class="even-columns">
             <div>
@@ -95,7 +103,7 @@
               <img src="#" alt="Some menu item (placeholder)"/>
             </div>
             <div>
-              <h2 class="fw-semi-bold fs-subtitles text-primary">Our Menu</h2>
+              <h2 class="fw-semi-bold fs-subtitles">Our Menu</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus labore ducimus cupiditate ea, 
                 tempore voluptates commodi, sint nobis porro repellendus in numquam odio alias amet, a quisquam unde facilis!</p>
                 <button class="button">See More</button>
@@ -108,7 +116,7 @@
         </div>
       </section> <!--/menu-->
 
-      <section class="padding-block-900 bg-primary"> <!--ordering-->
+      <section class="padding-block-900"> <!--ordering-->
         <div class="container">
           <div class="even-columns">
             <!-- buttons likely need custom styling since they will be bigger, might just use a utility class to make them
