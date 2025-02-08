@@ -127,6 +127,12 @@ p:not([class]) {
   align-items: center;     /* Center horizontally */
   justify-content: center; /* Center vertically (if needed) */
 }
+.flex-container-vertical-space {
+  display: flex;
+  flex-direction: column;  /* Stack h1 and p vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: space-around; /* Center vertically (if needed) */
+}
 /* this is also where i dont use css variables */
 .flow-section {
   --flow-spacer: 1em;
@@ -174,6 +180,9 @@ p:not([class]) {
 
 .primary-header {
   padding: var(--size-600) 0;
+}
+.primary-navigation {
+  margin-left: 36px;
 }
 .nav-wrapper {
   display: flex;
@@ -242,6 +251,29 @@ ul li {
 
 /* footer time */
 
+.social-list {
+  display: flex;
+  gap: var(--size-600);
+}
+
+.social-icon {
+  width: var(--size-600);
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-900)
+}
+
+.social-list a:is(:hover, :focus) .social-icon {
+  fill: var(--clr-accent)
+}
+
+@media (min-width: 50em) {
+  .social-list {
+    gap: var(--size-300);
+  }
+  .social-icon {
+    width: var(--size-500);
+  }
+}
 
 
 /* Utility Classes, classes that style only one aspect of an element or created for one specific purpose */
