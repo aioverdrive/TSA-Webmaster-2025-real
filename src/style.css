@@ -140,6 +140,9 @@ p:not([class]) {
 .padding-block-900 {
   padding-block: var(--size-900);
 }
+.padding-block-700 {
+  padding-block: var(--size-700);
+}
 .even-columns {
   display: grid;
   gap: var(--size-400);
@@ -176,6 +179,10 @@ p:not([class]) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: auto;
+}
+ul li {
+  align-self: center;
 }
 .mobile-nav-toggle {
   display: none;
@@ -232,6 +239,10 @@ p:not([class]) {
     display: none;
   }
 }
+
+/* footer time */
+
+
 
 /* Utility Classes, classes that style only one aspect of an element or created for one specific purpose */
 
