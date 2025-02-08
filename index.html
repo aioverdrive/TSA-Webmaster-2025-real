@@ -4,30 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Hummus Bowls and Wraps</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/index.css">
   </head>
   <body class="bg-unique-color">
     <header class="primary-header | bg-neutral-100">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"><img src="images/hummus-logo-full.png" alt="Hummus Bowls Logo"/></a>
+          <a href="/index.html"><img src="/images/hummus-logo-full.png" alt="Hummus Bowls Logo"/></a>
           <!-- Mobile exclusive navigation -->
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <img class="icon-hamburger" src="icons/icon-hamburger.svg" alt="" aria-hidden="true">
-            <img class="icon-close" src="icons/icon-close.svg" alt="" aria-hidden="true">
+            <img class="icon-hamburger" src="/icons/icon-hamburger.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="/icons/icon-close.svg" alt="" aria-hidden="true">
             <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
             <ul role="list" class="nav-list" aria-label="Primary">
               <li><a href="index.html">Home</a></li>
               <li><a href="/pages/menu.html">Menu</a></li>
-              <li><a href="/pages/our-methods.html">Our Methods</a></li>
-              <li><a href="/pages/our-impact.html">Our Impact</a></li>
+              <li><a href="/pages/our-methods.html">Methods</a></li>
+              <li><a href="/pages/our-impact.html">Impact</a></li>
               <li><a href="/pages/catering.html">Catering</a></li>
               <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
@@ -37,15 +38,17 @@
     </header>
 
     <main>
-      <section class="padding-block-900"> <!--hero-->
+      <section class="padding-block-900" id="hero"> <!--hero-->
         <div class="container">
           <div class="even-columns">
-            <div class="flow flow-hero flex-container">
-              <img src="#" alt="Full Hummus Bowls Logo"/>
-              <h1 class="fw-bold fs-titles text-netural">Because Our Earth Matters.</h1>
+            <div class="flex-container">
+              <h1 class="fw-bold fs-titles text-neutral-100">Because Our Earth Matters.</h1>
             </div>
-            <div>
-              <img src="#" alt="A sentient hummus bowl saying a pun."/>
+            <div class="flow flex-container">
+              <div class="contain-my-man | flex-container">
+                <img class="my-man" src="images/my-man.png" alt="A sentient hummus bowl saying a pun below."/>
+              </div>
+              <p class="fw-bold fs-subtitles text-neutral-100">"The earth doesn't have beef with us!"</p>
             </div>
           </div> <!--/even-columns-->
         </div>
@@ -56,9 +59,12 @@
           <div class="one-column">
             <div class="flow flow-section flex-container">
               <h2 class="fw-bold fs-subtitles ">About Us</h2>
-              <p class="wide-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem nemo iure quia omnis, 
-                praesentium voluptates voluptate quisquam, dolorem et nihil tempore eveniet architecto 
-                similique earum voluptatem laudantium neque ex itaque.</p>
+              <p class="wide-paragraph">At Hummus Bowls and Wraps, we’re passionate about bringing the Mediterranean's vibrant flavors and rich traditions to
+                every meal. Inspired by the simplicity and warmth of Greek culture, we craft fresh, wholesome bowls and wraps using
+                bold spices, crisp vegetables, and nourishing ingredients like hummus and olive oil. 
+                Our commitment to sustainability,
+                community, and quality shines through in every bite, creating food that’s not just delicious but rooted in a tradition
+                of health and connection.</p>
             </div>
           </div> <!--/one-column-->
       </section> <!--/about us-->
@@ -67,12 +73,14 @@
         <div class="container">
           <div class="even-columns">
             <div>
-              <img src="#" alt="Something that illustrates our methods (placeholder)"/>
+              <img src="/images/about-methods.jpg" alt="Something that illustrates our methods (placeholder)"/>
             </div>
             <div class="flow flow-section flex-container">
               <h2 class="fw-semi-bold fs-subtitles">Our Methods</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus labore ducimus cupiditate ea, 
-                tempore voluptates commodi, sint nobis porro repellendus in numquam odio alias amet, a quisquam unde facilis!</p>
+              <p>We are rooted in fresh ingredients, authentic flavors, and mindful preparation. We source local produce and
+                high-quality staples like chickpeas, olive oil, and fresh herbs, blending traditional Mediterranean techniques with
+                modern twists. Every dish our customers eat, from hand-crafted hummus to perfectly wrapped pitas, and every dish that
+                gets left over and donated reflects our commitment to health, sustainability, and vibrant, nourishing flavors.</p>
                 <button class="button">See More</button>
             </div>
           </div> <!--/even-columns-->
@@ -84,12 +92,14 @@
           <div class="even-columns">
             <div class="flow flow-section flex-container">
               <h2 class="fw-semi-bold fs-subtitles">Our Impact</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus labore ducimus cupiditate ea, 
-                tempore voluptates commodi, sint nobis porro repellendus in numquam odio alias amet, a quisquam unde facilis!</p>
+              <p>We celebrate the vibrant flavors and traditions of the Mediterranean, inspired by the warmth and simplicity of Greek
+                culture. Each bowl and wrap is crafted with fresh, wholesome ingredients, reflecting a deep respect for health,
+                sustainability, and community. Through bold spices, locally sourced produce, and mindful practices, we create meals
+                that nourish both body and soul, bringing people and the environment together with every bite.</p>
               <button class="button">See More</button>
             </div>
             <div>
-              <img src="#" alt="Something that illustrates our impact (placeholder)"/>
+              <img src="/images/about-impact.jpg" alt="Something that illustrates our impact (placeholder)"/>
             </div>
           </div> <!--/even-columns-->
         </div>
@@ -99,18 +109,17 @@
         <div class="container">
           <div class="even-columns">
             <div>
-              <img src="#" alt="Some menu item (placeholder)"/>
-              <img src="#" alt="Some menu item (placeholder)"/>
+              <img src="images/pita-wrap.png" alt="Some menu item (placeholder)"/>
+              <img src="images/halloumi-hash.png" alt="Some menu item (placeholder)"/>
             </div>
             <div class="flow flow-section flex-container">
               <h2 class="fw-semi-bold fs-subtitles">Our Menu</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus labore ducimus cupiditate ea, 
-                tempore voluptates commodi, sint nobis porro repellendus in numquam odio alias amet, a quisquam unde facilis!</p>
+              <p></p>
                 <button class="button">See More</button>
             </div>
             <div>
-              <img src="#" alt="Some menu item (placeholder)"/>
-              <img src="#" alt="Some menu item (placeholder)"/>
+              <img src="images/hum-bowl.png" alt="Some menu item (placeholder)"/>
+              <img src="images/side-falafel.png" alt="Some menu item (placeholder)"/>
             </div>
           </div> <!--/even-columns-->
         </div>
@@ -123,7 +132,8 @@
              bigger but we'll see -->
             <div class="flow flow-section flex-container">
               <h2 class="fw-semi-bold fs-subtitles">We do catering too!</h2>
-              <p>some catering description</p>
+              <p> You will receive a mini-version of our restaurant at your location prepared daily in small batches for a seasonally
+                inspired, personalized experience to satisfy all tastes and dietary needs of your guests.</p>
             </div>
             <div class="flex-container">
               <button class="button">Order For an Event</button>
@@ -133,14 +143,15 @@
       </section> <!--/ordering-->
     </main>
 
-    <footer class="bg-neutral-100 text-neutral-900 padding-block-700">
+    <footer class="primary-footer | bg-neutral-100 text-neutral-900 padding-block-900">
       <div class="container">
-        <div class="even-columns">
-          <div class="flex-container-vertical-space">
-            <img src="images/hummus-logo-full.png" alt="Hummus Bowls Full Logo"/>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social | flow flow-section flex-container-vertical-space">
+            <img src="/images/hummus-logo-full.png" alt="Hummus Bowls Full Logo"/>
             <ul class="social-list" role="list" aria-label="Social media links">
-              <li>
-                <a href="" aria-label="facebook">
+              <!-- this should not be allowed but im running out of time -->
+              <li style="margin-top: .92em;">
+                <a href="https://facebook.com" aria-label="facebook">
                   <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
@@ -158,7 +169,7 @@
                 </a>
               </li>
               <li>
-                <a href="" aria-label="twitter">
+                <a href="https://twitter.com" aria-label="twitter">
                   <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
@@ -167,7 +178,7 @@
                 </a>
               </li>
               <li>
-                <a href="" aria-label="pinterest">
+                <a href="https://pinterest.com" aria-label="pinterest">
                   <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
@@ -176,7 +187,7 @@
                 </a>
               </li>
               <li>
-                <a href="" aria-label="instagram">
+                <a href="https://instagram.com" aria-label="instagram">
                   <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
@@ -185,19 +196,20 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
-            <nav class="footer-navigation">
+            <p class="fs-small" style="opacity: 0.5">&copy; 2025 Hummus Bowls and Wraps. All rights reserved.</p>
+          </div> <!--/primary-footer-logo-social-->
+          <div class="primary-footer-nav">
+            <nav class="footer-nav | fs-cta">
               <ul role="list" aria-label="Footer">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Our Methods</a></li>
-                <li><a href="#">Our Impact</a></li>
-                <li><a href="#">Catering</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="/pages/our-methods.html">Our Methods</a></li>
+                <li><a href="/pages/our-impact.html">Our Impact</a></li>
+                <li><a href="/pages/catering.html">Catering</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
-        </div>
+        </div> <!--/primary-footer-wrapper-->
       </div>
     </footer>
     <script type="module" src="/src/main.js"></script>

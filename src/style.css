@@ -175,7 +175,6 @@ p:not([class]) {
   background-color: var(--clr-netural-100);
   color: var(--clr-secondary);
 }
-
 /* navigation */
 
 .primary-header {
@@ -250,7 +249,36 @@ ul li {
 }
 
 /* footer time */
-
+.primary-footer-wrapper {
+  display: grid;
+  gap: var(--size-700);
+  grid-template-areas: 
+  "nav"
+  "logo-social";
+}
+@media (min-width: 50em){
+  .primary-footer-wrapper {
+    grid-template-areas: "logo-social nav";
+  }
+}
+.primary-footer-logo-social {
+  grid-area: logo-social;
+}
+.primary-footer-nav {
+  grid-area: nav;
+}
+.footer-nav {
+  columns: 2;
+  gap: max(15vw, 2rem);
+}
+.footer-nav a {
+  color: var(--clr-neutral-900);
+  text-decoration: none;
+}
+.footer-nav a:is(:hover, :focus){
+  text-decoration: underline;
+  text-decoration-color: var(--clr-accent);
+}
 .social-list {
   display: flex;
   gap: var(--size-600);
