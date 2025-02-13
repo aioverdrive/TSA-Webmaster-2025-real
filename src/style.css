@@ -159,7 +159,8 @@ p:not([class]) {
     grid-auto-columns: 1fr;
   }
 }
-.button {
+.btn {
+  display: inline-block;
   border: 0;
   border-radius: 100vmax;
   padding: 0.75em 2em;
@@ -170,8 +171,8 @@ p:not([class]) {
   background-color: var(--clr-secondary);
   box-shadow: 0 1em 1em -1em var(--clr-primary);
 }
-.button:hover,
-.button:focus-visible{
+.btn:hover,
+.btn:focus-visible{
   background-color: var(--clr-netural-100);
   color: var(--clr-secondary);
 }
