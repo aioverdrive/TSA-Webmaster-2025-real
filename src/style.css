@@ -4,11 +4,11 @@
 :root {
   /* colors */
   --clr-accent: #F2A71B;
-  --clr-bg: #EDEDE9;
+  --clr-bg: #F2F2F2;
   --clr-primary: #81B622;
   --clr-secondary: #4E944F;
   --clr-neutral-900: #040316;
-  --clr-neutral-100: #F5F1E7;
+  --clr-neutral-100: #EAEAEA;
   /* font family */
   --ff-primary: "Jost", sans-serif;
   /* additional abstraction */
@@ -21,7 +21,7 @@
   --fw-bold: 600;
   /* font sizes */
   --fs-small: .875rem;
-  --fs-regular: 1rem;
+  --fs-regular: 1.2rem;
   --fs-cta: 1.5rem;
   --fs-subtitles: 1.75rem;
   --fs-titles: 3rem;
@@ -113,6 +113,7 @@ p:not([class]) {
 }
 .wide-paragraph {
   max-width: 75%;
+  text-align: left;
 }
 .container {
   --max-width: 69.375rem;
@@ -133,6 +134,27 @@ p:not([class]) {
   align-items: center;     /* Center horizontally */
   justify-content: space-around; /* Center vertically (if needed) */
 }
+p {
+  font-size: var(--fs-regular)
+}
+.img-standard {
+  width: clamp(250px, 50vw, 400px); /* Responsive width */
+  height: clamp(180px, 30vw, 300px); /* Responsive height */
+  object-fit: cover; /* Ensures images maintain their focus */
+  border-radius: 16px; /* Rounded edges */
+  display: block; /* Removes extra space below images */
+}
+.img-small {
+  width: clamp(150px, 30vw, 250px); 
+  height: clamp(100px, 20vw, 180px); 
+  object-fit: cover;
+  border-radius: 12px; /* Slightly smaller border-radius for balance */
+  display: block;
+}
+.invert-color {
+  background-color: var(--clr-secondary);
+  color: var(--clr-neutral-100);
+}
 /* this is also where i dont use css variables */
 .flow-section {
   --flow-spacer: 1em;
@@ -152,13 +174,75 @@ p:not([class]) {
 .even-columns {
   display: grid;
   gap: var(--size-400);
+  place-items: center;
+  grid-template-columns: 1fr; /* Ensures content stacks nicely on mobile */
+}
+.even-columns > div > img {
+  margin-bottom: var(--size-500);
 }
 @media (min-width: 50em){
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    gap: var(--size-600); /* Increase spacing for larger screens */
   }
 }
+@media (max-width: 50em) {
+  .even-columns {
+    grid-auto-flow: row; /* Stack items vertically */
+  }
+  
+  .swap-on-mobile:first-child {
+    order: 2;
+  }
+  
+  .swap-on-mobile:last-child {
+    order: 1;
+  }
+}
+/* darn menu */
+.three-column-layout {
+  display: grid;
+  place-items: center;
+  gap: var(--size-700);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "left text right"
+    "left text right"; /* Desktop Layout */
+}
+.three-column-layout > div > img {
+  margin-top: var(--size-500);
+  margin-bottom: var(--size-500);
+}
+@media (max-width: 50em) {
+  .three-column-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "top-images"
+      "text"
+      "bottom-images"; /* Mobile Layout */
+    text-align: center; /* Center text on mobile */
+  }
+  
+  .left-images, .right-images {
+    display: flex;
+    justify-content: center;
+    gap: var(--size-500); /* Add spacing between images */
+  }
+
+  .left-images {
+    grid-area: top-images;
+  }
+
+  .right-images {
+    grid-area: bottom-images;
+  }
+
+  .text-column {
+    grid-area: text;
+  }
+}
+
 .btn {
   display: inline-block;
   border: 0;
@@ -175,6 +259,22 @@ p:not([class]) {
 .btn:focus-visible{
   background-color: var(--clr-netural-100);
   color: var(--clr-secondary);
+}
+.layer-blob1{
+  background-image: url(/images/blob-scatter-1.svg);
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer-blob2{
+  background-image: url(/images/blob-scatter-2.svg);
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* navigation */
 
@@ -317,6 +417,10 @@ ul li {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+.contrast {
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3), 0 0 25px rgba(255, 255, 255, 0.1);
 }
 
 /* colors */

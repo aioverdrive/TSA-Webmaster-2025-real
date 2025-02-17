@@ -13,3 +13,39 @@
       height: 50%;
     }
   }
+p {
+  text-align: left;
+}
+.layer1{
+  background-image: url(/images/blob-neutral.svg);
+  aspect-ratio: 1300/360;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer2{
+  background-image: url(/images/blob-inverted.svg);
+  aspect-ratio: 1300/360;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer-cta{
+  background-image: url(/images/blob-neutral-cta.svg);
+  aspect-ratio: 1300/360;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.btn.invert-color {
+  color: var(--clr-secondary);
+  background-color: var(--clr-neutral-100);
+}
+.btn.invert-color:hover,
+.btn.invert-color:focus-visible{
+  background-color: var(--clr-primary);
+  color: var(--clr-netural-100);
+}
