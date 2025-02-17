@@ -11,6 +11,7 @@ export default {
         menu: resolve(__dirname, 'pages/menu.html'),
         impact: resolve(__dirname, 'pages/our-impact.html'),
         methods: resolve(__dirname, 'pages/our-methods.html'),
+        credits: resolve(__dirname, 'pages/credits.html')
       }
     }
   }
